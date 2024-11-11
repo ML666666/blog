@@ -1,0 +1,20 @@
+.page .theme-default-content,
+.page-meta {
+  max-width: 68vw;
+}
+html.dark {
+  --c-height-light: #3eaf7c;
+  --c-the-funtion: #f08d49;
+}
+:root {
+  --c-height-light: #3eaf7c;
+  --c-the-funtion: #f08d49;
+}
+
+.heightLight {
+  color: var(--c-height-light);
+}
+
+.heightLightContent {
+  color: var(--c-the-funtion);
+}
