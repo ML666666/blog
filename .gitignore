@@ -1,4 +1,6 @@
-# dependencies
-**/node_modules
-.temp
-.cache
+
+node_modules/
+src/.vuepress/.cache/
+src/.vuepress/.temp/
+src/.vuepress/dist/
+package-lock.json

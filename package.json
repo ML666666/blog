@@ -1,25 +1,24 @@
 {
-  "name": "optimization",
-  "version": "1.0.0",
-  "description": "A document map of how to Optimize our daily programming work",
-  "main": "index.js",
+  "name": "opm",
+  "version": "2.0.0",
+  "description": "a simple blog",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "npx vuepress build src",
+    "docs:buildWithBaseClouds": "npx vuepress build src && cd src/.vuepress/dist && tcb hosting deploy -e opm-4g7hfqkg2da1bbd6",
+    "docs:clean-dev": "vuepress dev src --clean-cache",
+    "docs:dev": "vuepress dev src",
+    "docs:update-package": "npx vp-update"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://gitee.com/ljj6666666666666/blog-of-output-optimization.git"
-  },
-  "keywords": [
-    "Blog/OutputOptimization/JavaScript/React/Vue"
-  ],
-  "author": "LJJ6666666666666",
-  "license": "ISC",
   "devDependencies": {
-    "vuepress": "^2.0.0-beta.60"
+    "@vuepress/client": "2.0.0-beta.67",
+    "vue": "^3.3.4",
+    "vuepress": "2.0.0-beta.67",
+    "vuepress-theme-hope": "2.0.0-beta.242"
   },
   "dependencies": {
-    "@vuepress/theme-default": "^1.9.10"
+    "@vue/repl": "^2.6.1",
+    "mathjax-full": "^3.2.2"
   }
 }
