@@ -1,52 +1,33 @@
 import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
-  "/zh/",
-  "/zh/demo/",
   {
-    text: "博文",
-    icon: "pen-to-square",
-    prefix: "/zh/posts/",
-    children: [
-      {
-        text: "苹果",
-        icon: "pen-to-square",
-        prefix: "apple/",
-        children: [
-          { text: "苹果1", icon: "pen-to-square", link: "1" },
-          { text: "苹果2", icon: "pen-to-square", link: "2" },
-          "3",
-          "4",
-        ],
-      },
-      {
-        text: "香蕉",
-        icon: "pen-to-square",
-        prefix: "banana/",
-        children: [
-          {
-            text: "香蕉 1",
-            icon: "pen-to-square",
-            link: "1",
-          },
-          {
-            text: "香蕉 2",
-            icon: "pen-to-square",
-            link: "2",
-          },
-          "3",
-          "4",
-        ],
-      },
-      { text: "樱桃", icon: "pen-to-square", link: "cherry" },
-      { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
-      "tomato",
-      "strawberry",
-    ],
+    text: "主页",
+    link: "/zh/",
+    icon: "home",
   },
   {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
+    text: "node",
+    link: "/zh/node/",
+    icon: "laptop-code",
+    activeMatch: "^/zh/node",
+  },
+  {
+    text: "设计模式",
+    link: "/zh/patterns/",
+    icon: "code",
+    activeMatch: "^/zh/patterns",
+  },
+  {
+    text: "测试",
+    link: "/zh/softwareTesting/",
+    icon: "spell-check",
+    activeMatch: "^/zh/softwareTesting",
+  },
+  {
+    text: "杂项",
+    link: "/zh/someThing/",
+    icon: "layer-group",
+    activeMatch: "^/zh/someThing",
   },
 ]);
