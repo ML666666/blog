@@ -25,6 +25,12 @@ export const zhNavbar = navbar([
     activeMatch: "^/zh/softwareTesting",
   },
   {
+    text: "python",
+    link: "/zh/python/",
+    icon: "check",
+    activeMatch: "^/zh/python",
+  },
+  {
     text: "杂项",
     link: "/zh/someThing/",
     icon: "layer-group",
